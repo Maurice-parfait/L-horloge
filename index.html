@@ -7,19 +7,30 @@
     <link rel="stylesheet" href="src/output.css">
     <!-- npx tailwindcss -i ./CSS/Style.css -o ./src/output.css --watch -->
 </head>
-<body class="m-0 p-4 box-border h-screen bg-slate-200">
+<body class="m-0 p-0 box-border bg-slate-200">
    
-    <h1 class="flex justify-center font-bold text-5xl">HORLOGE</h1>
-    
-    <div class="flex justify-center mt-14">
-        <div class="w-96 h-96 rounded-full bg-cover" style="background-image: url(img/horloge.jpeg);">
+    <div class="flex justify-center items-center flex-col h-screen">
 
+        <h1 class="absolute left-[45%] top-8 font-bold text-5xl">HORLOGE</h1>
 
+        <div class="w-96 h-96 rounded-full bg-cover relative" style="background-image: url(img/horloge.jpeg);">
+
+            <div class="absolute top-1/2 left-1/2 rounded-sm">
+                <div class="w-2 h-28 bg-black rounded-xl origin-bottom" id="heures"></div>
+            </div>
+
+            <div class="absolute top-1/2 left-1/2">
+                <div class="w-1 h-32 bg-yellow-300 rounded-t-xl origin-bottom" id="minutes"></div>
+            </div>
+
+            <div class="absolute top-1/2 left-1/2 rounded-sm">
+                <div class="w-1 h-40 bg-red-600 rounded-t-xl origin-bottom" id="secondes"></div>
+            </div>
 
         </div>
     </div>
 
 
-
+    <script src="scrypt.js"></script>
 </body>
 </html>
