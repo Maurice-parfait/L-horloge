@@ -1,3 +1,16 @@
+gsap.to("#cercle", { 
+    duration: 1.5, 
+    rotation: 360, 
+    repeat: -1, 
+    ease: "linear" 
+});
+
+
+const loader = document.getElementById("loader");
+window.addEventListener("load", ()=> {
+    loader.style.display = "none";
+});
+
 let date, heur, min, sec;
 
 function horloge() {

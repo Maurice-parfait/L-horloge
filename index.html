@@ -8,7 +8,15 @@
     <!-- npx tailwindcss -i ./CSS/Style.css -o ./src/output.css --watch -->
 </head>
 <body class="m-0 p-0 box-border bg-slate-200 font-primary">
-   
+
+
+    <!--la partie de loader  -->
+    <div id="loader" class="fixed h-screen w-full bg-slate-200 z-50 flex justify-center items-center">
+        <div id="cercle" class="w-40 h-40  border-[15px] border-t-blue-500 rounded-full p-2"></div>
+    </div>
+
+
+   <!-- la partie de l'holorge -->
     <div class=" flex justify-center items-center flex-col h-screen">
 
         <h1 class="absolute left-[45%] top-8 text-5xl petitecran:left-[15%] max-md:left-[35%]">L'horloge</h1>
@@ -31,6 +39,10 @@
     </div>
 
 
+    <!-- le liens de gsap -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+    <!-- le liens du fichier -->
     <script src="scrypt.js"></script>
 </body>
 </html>
